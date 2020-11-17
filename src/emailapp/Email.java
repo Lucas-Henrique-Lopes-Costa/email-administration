@@ -3,7 +3,7 @@ package emailapp;
 import java.util.Scanner;
 
 public class Email {
-	private String primeiroNome; // private => as pessoas não podem acesssar 
+	private String primeiroNome; // private => as pessoas nï¿½o podem acesssar 
 	private String ultimoNome;
 	private String senha;
 	private String departamento;
@@ -15,11 +15,11 @@ public class Email {
 	private String empresa = "wep";
 	private int capacidadeCaixaEmail = 500;
 	
-	// Receber o primeiro nome e o último nome
+	// Receber o primeiro nome e o ultimo nome
 	public Email(String primeiroNome, String ultimoNome) {
 		this.primeiroNome = primeiroNome;
 		this.ultimoNome = ultimoNome;
-		System.out.println("Olá, " + this.primeiroNome + " " + this.ultimoNome + ".");
+		System.out.println("Ola, " + this.primeiroNome + " " + this.ultimoNome + ".");
 		
 		// Chamando o method do Departamento
 		this.departamento = setDepartament();
@@ -27,11 +27,11 @@ public class Email {
 		
 		// Chamando o method da Senha
 		this.senha = senhaAleatoria(numeroCaracter);
-		// System.out.println("Sua senha é: " + this.senha);
+		// System.out.println("Sua senha e: " + this.senha);
 		
 		// Gerando o email
 		email = primeiroNome.toUpperCase() + "." + ultimoNome.toUpperCase() + "@" + departamento + "-" + empresa + ".com";
-		// System.out.println("Seu email é: " + email);
+		// System.out.println("Seu email e: " + email);
 	}
 	
 	// Pergutar o Departamento
@@ -60,7 +60,7 @@ public class Email {
 		}
 	}
 	
-	// Gerando um Senha aleatória
+	// Gerando um Senha aleatï¿½ria
 	private String senhaAleatoria (int length) {
 		String setSenha = "ABCDEFHIJKLMNOPQRSTUVWXYZ0123456789@#$";
 		
@@ -77,11 +77,11 @@ public class Email {
 	
 	
 	// Capacidade da caixa de email
-	public void setCapacidade (int capacidade) { // public void permite você atribuí-lo no arquivo EmailApp
+	public void setCapacidade (int capacidade) { // public void permite voce atribui-lo no arquivo EmailApp
 		this.capacidadeCaixaEmail = capacidade;
 	}
 	
-	public int pegarCapacidade() { // com o public você estará atribuindo o valor no EmailApp
+	public int pegarCapacidade() { // com o public voce estaria atribuindo o valor no EmailApp
 		return capacidadeCaixaEmail;
 	}
 	
@@ -109,6 +109,5 @@ public class Email {
 				"\nEmail: " + email +
 				"\nCapacidade do Email: " + capacidadeCaixaEmail + "mb";
 	}
-	
 	
 }
