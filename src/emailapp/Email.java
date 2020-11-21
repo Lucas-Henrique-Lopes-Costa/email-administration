@@ -3,7 +3,7 @@ package emailapp;
 import java.util.Scanner;
 
 public class Email {
-	private String primeiroNome; // private => as pessoas n�o podem acesssar 
+	private String primeiroNome; // private => as pessoas não podem acesssar 
 	private String ultimoNome;
 	private String senha;
 	private String departamento;
@@ -19,19 +19,19 @@ public class Email {
 	public Email(String primeiroNome, String ultimoNome) {
 		this.primeiroNome = primeiroNome;
 		this.ultimoNome = ultimoNome;
-		System.out.println("Ola, " + this.primeiroNome + " " + this.ultimoNome + ".");
+		System.out.println("Olá, " + this.primeiroNome + " " + this.ultimoNome + ".");
 		
 		// Chamando o method do Departamento
 		this.departamento = setDepartament();
-		System.out.println("\nOla, " + this.departamento + ". Tenha um Bom Dia!\n");
+		System.out.println("\nOlá, " + this.departamento + ". Tenha um Bom Dia!\n");
 		
 		// Chamando o method da Senha
 		this.senha = senhaAleatoria(numeroCaracter);
-		// System.out.println("Sua senha e: " + this.senha);
+		// System.out.println("Sua senha é: " + this.senha);
 		
 		// Gerando o email
 		email = primeiroNome.toUpperCase() + "." + ultimoNome.toUpperCase() + "@" + departamento + "-" + empresa + ".com";
-		// System.out.println("Seu email e: " + email);
+		// System.out.println("Seu email é: " + email);
 	}
 	
 	// Pergutar o Departamento
