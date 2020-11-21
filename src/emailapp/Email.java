@@ -15,7 +15,7 @@ public class Email {
 	private String empresa = "wep";
 	private int capacidadeCaixaEmail = 500;
 	
-	// Receber o primeiro nome e o ultimo nome
+	// Receber o primeiro nome e o último nome
 	public Email(String primeiroNome, String ultimoNome) {
 		this.primeiroNome = primeiroNome;
 		this.ultimoNome = ultimoNome;
@@ -60,7 +60,7 @@ public class Email {
 		}
 	}
 	
-	// Gerando um Senha aleat�ria
+	// Gerando um Senha aleatória
 	private String senhaAleatoria (int length) {
 		String setSenha = "ABCDEFHIJKLMNOPQRSTUVWXYZ0123456789@#$";
 		
